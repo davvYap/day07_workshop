@@ -1,0 +1,85 @@
+/* body{
+    margin-bottom: 60px;
+} */
+
+footer{
+    /* position:absolute; */
+    /* bottom: 0; */
+    height: 60px;
+    line-height: 60px;
+}
+
+.carousel{
+    width: 50%;
+    height: 300px;
+}
+
+#contact-us{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.contact-form label {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+small{
+    color: brown;
+    text-decoration:underline;
+}
+
+.contact-form span{
+    float: right;
+    font-size: smaller;
+}
+
+.contact-form{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#tele-icon:hover{
+    cursor: pointer;
+}
+
+#contact-us:hover{
+    transform: scale(1.2);
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    background-color: lemonchiffon;
+    transform: scale(1.05);
+}
+
+.contact-form input:required, .contact-form textarea:required{
+    background:url('/image/day7_resources-main/red_asterisk.png') no-repeat 99% center  ;
+}
+
+.contact-form input:invalid, .contact-form textarea:invalid{
+    background:url('/image/day7_resources-main/invalid.png') no-repeat 98% center  ;
+}
+
+.contact-form input:valid, .contact-form textarea:valid{
+    background:url('/image/day7_resources-main/valid.png') no-repeat 98% center  ;
+}
+
+.form-hint{
+    background-color:crimson;
+    color: white;
+    border: 1;
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+.form-hint::before{
+    display: none;
+}
+
+.contact-form input:required:valid + .form-hint {
+    display: none;
+}
+
+.contact-form textarea:required:valid + .form-hint {
+    display: none;
+}
